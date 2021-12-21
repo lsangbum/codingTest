@@ -1,6 +1,6 @@
 package programmers;
 
-public class RecommendationID {
+public class 신규아이디추천 {
     public static String solution(String id) {
 
         // 모든 대문자를 소문자로 변환
@@ -36,7 +36,7 @@ public class RecommendationID {
 
     public static void main(String[] args) {
 
-        String id = "a";
+        String id = ".aWERTRS.";
         String new_id = solution(id);
         System.out.println("변환 전 아이디 : " + id);
         System.out.println("변환 후 아이디 : " + new_id);
