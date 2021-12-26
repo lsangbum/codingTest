@@ -6,7 +6,7 @@ public class 크레인인형뽑기게임 {
     public static void main(String[] args) {
 
         int[][] board = {{0,0,0,0,0}, {0,0,1,0,3}, {0,2,5,0,1}, {4,2,4,4,2}, {3,5,1,3,1}};
-        int[] moves = {1,5,3,5,1,2,1,4};
+        int[] moves = {1,5,3,5,1,2,1,4,3,2,7,8,10};
 
         System.out.println("터진 인형의 수 : " + solution(board, moves));
 
@@ -18,6 +18,7 @@ public class 크레인인형뽑기게임 {
        Stack<Integer> stack = new Stack<>();                    //뽑은 인형 보관함 stack = 후입선출 LIFO
 
         for (int move : moves) {                                //입력 수 만큼 반복하겠다.
+            if (move > 5) continue;                             //입력 값이 5보다 클 경우 아무일도 일어나지 않는다.
             for (int i = 0; i < board.length; i++) {            //각 배열의 해당 위치의 값을 비교하겠다.
                 if (board[i][move - 1] != 0) {                  //비교 대상이 0일 경우 아무일도 일어나지 않는다.
                     if (stack.isEmpty()) {                      //보관함이 비어 있을 경우 바로 저장
