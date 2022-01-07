@@ -32,7 +32,7 @@ public class 모의고사 {
         scoreSort = score.clone();
         //가장 높은 점수를 추출하기 위한 정렬
         Arrays.sort(scoreSort);
-        //오름차순 정렬로 가장 뒷 값이 최대값 / 최대 값이 2개 이상일 경우를 대비하여 비교변수 max 생성
+        //오름차순 정렬로 가장 뒷 값이 최대값  /  최대 값이 2개 이상일 경우를 대비하여 비교변수 max 생성
        int max = scoreSort[scoreSort.length - 1];
 
         //가장문제를 많이 맞춘 학생 찾기 복수 일 경우를 대비하여 List 에 저장
