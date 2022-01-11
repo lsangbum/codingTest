@@ -4,6 +4,7 @@ import java.util.*;
 
 public class 체육복 {
 
+
     public int solution(int n, int[] lost, int[] reserve) {
         //학생 전체 n - 체육복분식학생 lost = 1차적인 체육가능학생 수
         int result = n - lost.length;
