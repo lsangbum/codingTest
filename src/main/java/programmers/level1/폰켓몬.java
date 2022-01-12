@@ -1,15 +1,25 @@
-package programmers;
+package programmers.level1;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
 
 public class 폰켓몬 {
 
     public static void main(String[] args) {
         int[] nums = {3,3,3,2,2,2};
-        System.out.println("최대 수 : " + solution(nums));
+        //System.out.println("최대 수 : " + solution(nums));
+        HashSet<Integer> hs = new HashSet();
+        Integer i = 3;
+        int j = 3;
+        System.out.println("equals : " + i.equals(j));
+        System.out.println("== : " + (i == j));
+        for (int num : nums) {
+            hs.add(num);
+        }
 
+        System.out.println("해쉬셋 : " + hs);
     }
 
     public static int solution(int[] nums) {
@@ -38,6 +48,7 @@ public class 폰켓몬 {
         if (result > answer) return answer;
 
         return result;
-    }
 
-}
+    }//solution
+
+}//class

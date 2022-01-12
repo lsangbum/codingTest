@@ -1,4 +1,4 @@
-package programmers;
+package programmers.level1;
 
 public class 신규아이디추천 {
     public static String solution(String id) {

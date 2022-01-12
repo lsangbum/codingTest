@@ -1,4 +1,4 @@
-package programmers;
+package programmers.level1;
 
 import java.math.BigDecimal;
 import java.util.Arrays;
