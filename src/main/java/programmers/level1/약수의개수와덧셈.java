@@ -17,13 +17,13 @@ public class 약수의개수와덧셈 {
             int count = 0;
             //left 부터 right 까지의 수를 하나 씩 1부터 해당 수까지 계산 후 count++
             for (int j = 1; j <= i; j++) if (i % j == 0) count++;
-            //약수의 개수가 짝 / 홀 인지 검사 후 + -
+            //약수의 개수가 짝 / 홀 인지 검사 후 + - 연산
             if (count % 2 == 0) result += i;
             else result -= i;
         }
 
         return result;
-
+        
     }//solution
 
 }//class
